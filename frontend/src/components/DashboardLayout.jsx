@@ -48,8 +48,10 @@ export default function DashboardLayout({ children }) {
       }}>
         {/* Logo */}
         <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 32, paddingLeft: 4 }}>
-          <div style={{ width: 32, height: 32, background: "var(--green)", borderRadius: 8,
-            display: "flex", alignItems: "center", justifyContent: "center", fontSize: 16, flexShrink: 0 }}>📈</div>
+          <div style={{
+            width: 32, height: 32, background: "var(--green)", borderRadius: 8,
+            display: "flex", alignItems: "center", justifyContent: "center", fontSize: 16, flexShrink: 0
+          }}>📈</div>
           {open && <span style={{ fontWeight: 800, fontSize: 16, color: "#eef", letterSpacing: "-0.02em", whiteSpace: "nowrap" }}>TutorTrade</span>}
         </div>
 
@@ -82,9 +84,11 @@ export default function DashboardLayout({ children }) {
 
         {/* User + logout */}
         <div style={{ borderTop: "1px solid var(--border)", paddingTop: 14, display: "flex", alignItems: "center", gap: 10 }}>
-          <div style={{ width: 34, height: 34, borderRadius: "50%", background: "var(--green-bg)",
+          <div style={{
+            width: 34, height: 34, borderRadius: "50%", background: "var(--green-bg)",
             display: "flex", alignItems: "center", justifyContent: "center",
-            fontSize: 13, fontWeight: 700, color: "var(--green)", flexShrink: 0, border: "1px solid var(--green-border)" }}>
+            fontSize: 13, fontWeight: 700, color: "var(--green)", flexShrink: 0, border: "1px solid var(--green-border)"
+          }}>
             {initials}
           </div>
           {open && (
@@ -101,8 +105,10 @@ export default function DashboardLayout({ children }) {
       {/* Main */}
       <div style={{ flex: 1, display: "flex", flexDirection: "column", minWidth: 0 }}>
         {/* Topbar */}
-        <header style={{ background: "var(--bg2)", borderBottom: "1px solid var(--border)",
-          padding: "14px 28px", display: "flex", alignItems: "center", gap: 16, flexShrink: 0 }}>
+        <header style={{
+          background: "var(--bg2)", borderBottom: "1px solid var(--border)",
+          padding: "14px 28px", display: "flex", alignItems: "center", gap: 16, flexShrink: 0
+        }}>
           <button onClick={() => setOpen(!open)}
             style={{ background: "transparent", border: "none", color: "var(--text3)", fontSize: 20, cursor: "pointer", lineHeight: 1 }}>☰</button>
           <div style={{ marginLeft: "auto", display: "flex", alignItems: "center", gap: 12 }}>
